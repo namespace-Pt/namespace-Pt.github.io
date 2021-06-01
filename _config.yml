@@ -1,1 +1,4 @@
-theme: jekyll-theme-cayman
+theme:
+title: Welcome to the Pt’s homepage!
+description: A personal homepage and blog container, feel free to bookmark it to keep an eye on my research updates and fun in life.
+show_downloads: false
