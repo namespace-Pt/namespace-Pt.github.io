@@ -10,8 +10,8 @@ layout: default
   <div>&nbsp;</div>
 
   <ul class="post-list">
-    {% for post in site.posts %}
-      {% if post.category == 'post'%}
+    {% for post in site.posts -%}
+      {% if post.tag == 'post'%}
         <li>
           {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
           <span class="post-meta">{{ post.date | date: date_format }}</span>
@@ -27,14 +27,14 @@ layout: default
   <hr>
 
   <h2>Other than Blogs</h2>
-  <div>&nbsp;</div>
 
-  <ul class="other-list" style="list-style-type: none">
-    {% for post in site.posts %}
-      {% if post.category != 'post'%}
+  <ul class="post-list">
+    {% for post in site.posts -%}
+      {% if post.tag != 'post'%}
         <li>
           {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          {% assign tag = post.tag | prepend:"    's " %}
+          <span class="post-meta">{{ post.date | date: date_format | append: tag | strip_newlines -}}</span>
 
           <h2>
             <a class="post-link" href="{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>

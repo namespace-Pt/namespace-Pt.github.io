@@ -3,9 +3,17 @@ title: Welcome to Pt!
 description: Personal Homepage and Posts
 icon: /assets/images/icon-rick.png
 
-
 show_downloads: false
 google_analytics: G-W9EF2VS3C2
+
+
+# defaults:
+#   -
+#     scope:
+#       path: ""
+#     values:
+#       layout: "post"
+#       tag: "blog"
 
 plugins:
   - jemoji
