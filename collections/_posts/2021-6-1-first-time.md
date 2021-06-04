@@ -1,0 +1,110 @@
+---
+title: 第一次科研复盘
+---
+<style>
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #666;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+
+# 前言
+严格来说, 新闻推荐这个项目是从去年五月开始的。记得当时先和邵总组了队, 想做一个RUC的分享平台, 然后想请dou老师做指导老师, 结果他说我们这个没有创新点, 并且很难监管, 建议换一个题目 (*其实没有建议, 感觉dou总是说你们自己决定, 他只是提想法哈哈哈* :grin:)。我们说那咋办, 老师直接掏出**[“聚合人大”](https://github.com/Ethan00Si/JuHeRenDa)**, 说你们看看。
+
+敲定了做新闻门户后, 我又找了思神和铁琦, 组建了我们**四个水炮手**。但大二的我们对于相关的技术可谓是一无所知, 只是看到老师给的项目简介里有个 *知识图谱*, 有个 *推荐系统*, 于是打算从两头分开下手, 我负责知识图谱。最开始我还不会去进行<a class="popup" style="">**准确的思考**<span class="popuptext">先想明白自己什么不懂, 再去解决</span></a>, 只能盲目地搜索知识图谱然后看一堆自己毛都不懂的术语并感到十分迷茫。
+
+后来, 我们小组发觉原来光看CSDN没啥用, 于是开始在知网上搜索一些相关的论文, 总之是对知识图谱和推荐算法都有了一点点宏观的理解。但是当跟dou汇报后, dou指出我们太聚焦于方法了, 这不是立项时的重点, 立项更看重意义和<a class="popup" style="">**动机**<span class="popuptext">为什么要用这个方法, 为什么不用别的？</span></a>, 因此我们又开展了新一轮的调研。
+
+这回我们终于意识到百度是:shit:中:shit:, 开始学会从google上找英文文献, 从而发现了[DKN](https://arxiv.org/abs/1801.08284), 然后学习了好几篇CSDN上的博客, 想搞明白它在做什么, 但是只能说<a class="popup" style="">**徒劳**<span class="popuptext">这里不得不说, 很多人自己啥都没搞明白, 就写博客, 真的害人。</span></a>。单就那个Attention机制, 就讨论了一周毛都没搞明白, 讲道理十分低效, 但现在看来这些都是纸老虎罢了。
+
+也就是从DKN开始(*尽管我当时并没有看懂*), 我接触到了**新闻推荐**这个领域, 但要到真正入坑, 那就是大创之后的事了。
+
+<hr>
+
+后来遇到疫情, 封闭在家, dou老师给我发了一份实验室的论文清单, 我开始初步接触英文文献；尽管论文里技术细节并不能看懂, 但是仔细读英文论文给我带来了和看中文资料完全不一样的体验, 反正最开始是完全不敢看, 而且没耐心看的, 就是碰到一连串看不懂的话, 直接就不想看了；到后来能够静下心, 慢慢地读, 遇到生词就去查, 然后做一下笔记, 遇到读不懂的句子就多读几遍, 并且在笔记本记录下各个符号的含义, 然后尝试搞明白<a class="popup" style="">**每一行数学公式的意义**<span class="popuptext">讲道理, 很多数学公式都是看着唬人罢了。</span></a>, 慢慢地稍微有了些自信, 也从宏观的角度领略了几个模型的结构和功能。
+
+值得一提的是, 尽管我自己也尝试写过CNN识别验证码和风格迁移的项目, 但其实我对深度学习的各种原理是一窍不通的, 只是搬运代码罢了, 知识也根本**不成体系**；当时对于 *RNN*, *CNN*, *MLP*什么的各种那简直是向往极了, 很想搞明白, 但是中文很多东西写的吧让人发怵, 英文的又看不下去, 做了很多无用功。这里还是建议初学的大伙静下心来去google一下相关的博客, 英文虽然刚开始看起来比较费劲, 但是积累下来, 我觉得是获益匪浅的, 尤其推荐[**TowardsDataSience**](https://towardsdatascience.com/)这个平台, 里面的博客相当优质, 而且浅入深出, 非常赞! **而且**, 最好搜东西也别再baidu, 直接尝试用英文在google搜, 即使最开始用可能表达不清楚, 但是它那个下拉菜单一般能跳出来我真正想找的内容；反正我现在已经完全习惯英文搜索了, 只能说 **Google yyds:fire:**
+
+<hr>
+
+立项之后, 我们四个水炮手在暑假集中进行了聚合人大的开发, 从爬虫开始一直到Django和微信xcss, 当时的很多心得都发了qq空间哈哈哈, 这里就不想再说了；最让我印象深刻的就是写(*抄*)了NER的代码, 那可真的是抄呀, 什么维度, 什么batch, 压根不懂, 最后自己都不敢用自己写出来的代码, 只好去网上找库调用, 这里再提一嘴, 有些库真是太垃圾了, 千万不要盲目相信github的项目会比自己写出来的好, 尤其有些标星多的, 别盲从；我感觉很多人标星了之后根本不带看的, 我当时用了个叫kashgari的库, 又慢又不准, 太蠢了。
+
+总而言之, 截止到大三上为止, 我写了几个小项目(*深度学习相关*)的代码, 但基本没有能力自己写一个模型代码的知识、能力和信心, 不过大创中2个月密集的开发和讨论让我的自学能力得到了显著的提升, 并且有了一定阅读英文文献和英文资源的基础和自信, 就这样, 我开始了我的第一次科研之旅……
+
+# 确定题目
+时间来到大三上, 刚入学的我并没有适应到学校的学习节奏中, 天天在寝室打游戏哈哈哈哈,
+## 为什么突然
+
+<script>
+  // FIXME, find a more elegant way
+  // global vaiable for the click target
+  var popup = null;
+  $(document).click(function(event){
+    if(popup){
+        popup.classList.toggle("show");
+        popup = null;
+    }
+  });
+  $(".popup").click(function(event){
+
+    var target = $(event.target);
+    popup = target.parent().children()[1];
+    console.log(popup);
+    popup.classList.toggle("show");
+
+    // stop event propagation, or the event would trigger the document click function, leading to the popup window disappearing in a flash
+    event.stopPropagation();
+  })
+</script>
