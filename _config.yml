@@ -6,22 +6,11 @@ icon: /assets/images/icon-rick.png
 show_downloads: false
 google_analytics: G-W9EF2VS3C2
 
-
-# defaults:
-#   -
-#     scope:
-#       path: ""
-#     values:
-#       layout: "post"
-#       tag: "blog"
-
 plugins:
   - jemoji
 
 collections:
-  moods:
-    output: true
-  mems:
+  drafts:
     output: true
 
 defaults:
@@ -32,14 +21,19 @@ defaults:
       layout: post
   -
     scope:
-      path: "collections/_moods"
+      path: "collections/_drafts"
     values:
       layout: post
-      title: 日记
-  -
-    scope:
-      path: "collections/_mems"
-    values:
-      layout: post
+  # -
+  #   scope:
+  #     path: "collections/_moods"
+  #   values:
+  #     layout: post
+  #     title: 日记
+  # -
+  #   scope:
+  #     path: "collections/_mems"
+  #   values:
+  #     layout: post
 
 collections_dir: collections

@@ -2,12 +2,64 @@
 layout: default
 ---
 
-<!-- <link rel="stylesheet" href="/assets/css/extra.css">
-<div class="header">
-  <div class="progress-container">
-    <div class="progress-bar" id="myBar"></div>
-  </div>
-</div> -->
+<style>
+  /* Popup container - can be anything you want */
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #666;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+</style>
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -19,3 +71,27 @@ layout: default
     {% include disqus_comments.html %}
   {% endif %}
 </article>
+
+<script>
+  // FIXME, find a more elegant way
+  // global vaiable for the click target
+  var popup = Array();
+  $(document).click(function(event){
+    if(popup.length > 0){
+      for (var i = 0; i < popup.length; i++) {
+        popup[i].classList.toggle("show");
+      }
+      popup = [];
+    }
+  });
+  $(".popup").click(function(event){
+
+    var target = $(event.target).parent().children()[1];
+    popup.push(target);
+    console.log(popup);
+    target.classList.toggle("show");
+
+    // stop event propagation, or the event would trigger the document click function, leading to the popup window disappearing in a flash
+    event.stopPropagation();
+  })
+</script>
