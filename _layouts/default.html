@@ -39,15 +39,15 @@
     {% include social-metatags.html %}
     {% endif %}
 
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | relative_url }}">
 
 
-    <link rel="shortcut icon" href="{{ site.icon | absolute_url }}">
+    <link rel="shortcut icon" href="{{ site.icon | relative_url }}">
 
     <meta name="robots" content="noarchive">
 
 
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | absolute_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <!-- <link rel="stylesheet" href="/assets/css/style.scss"> -->
 
     <script src="/assets/js/jquery.js"></script>
