@@ -118,20 +118,15 @@ permalink: /homepage/
         </li>
     </ul>
 
-    <h2>报告和展示</h2>
-    <div>2020</div>
+    <h4>报告和展示</h4>
     <ul>
         <li>
             <a href="../assets/docs/News Recommendation Talk.pdf" target="_blank"><strong>News Recommendation</strong></a>
         </li>
-    </ul>
-    <div>2021</div>
-    <ul>
         <li>
             <a href="../assets/docs/Retrieval Models.pdf" target="_blank"><strong>Neural Retrieval Models</strong></a>
         </li>
     </ul>
-
     <h2>项目经历</h2>
     <ul>
         <li>
