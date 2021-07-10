@@ -69,7 +69,7 @@ permalink: /homepage/
             电子邮件： zpt@ruc.edu.cn
         </div>
         <div>联系方式：</div>
-        <div>Github：<i class="fa fa-github fa-1x" aria-hidden="true"></i> <a href="http://github.com/namespace-Pt"
+        <div>Github：<i class="fa fa-github fa-1x" aria-hidden="true"></i> <a href="https://github.com/namespace-Pt"
                 target="_blank">namespace-Pt</a></div>
         <div>QQ：<i class="fa fa-qq" aria-hidden="true"></i> 694931516</div>
         <div>bilibili：<a href="https://space.bilibili.com/393162910" target="_blank">叫我Pt666</a></div>

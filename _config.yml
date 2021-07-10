@@ -3,6 +3,8 @@ title: Welcome to Pt!
 description: Personal Homepage and Posts
 icon: /assets/images/icon-rick.png
 
+baseurl: https://www.namespace-pt.com
+
 show_downloads: false
 google_analytics: G-W9EF2VS3C2
 

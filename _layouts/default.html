@@ -48,6 +48,7 @@
 
 
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | absolute_url }}">
+    <!-- <link rel="stylesheet" href="/assets/css/style.scss"> -->
 
     <script src="/assets/js/jquery.js"></script>
     </head>
@@ -89,7 +90,7 @@
                 </time>
                 {% assign page_author = page.author | default: site.author | default: nil | escape %}
                 {% if page_author %}
-                • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page_author }}</span></span>
+                • <span itemprop="author" itemscope itemtype="https://schema.org/Person"><span itemprop="name">{{ page_author }}</span></span>
                 {% endif %}
             </h2>
             {% endif %}
