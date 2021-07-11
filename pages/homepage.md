@@ -43,7 +43,7 @@ permalink: /homepage/
 </nav>
 
 <div class="container">
-<h2>张配天(Peitian Zhang)
+<h2 class="pb-2 mt-4 mb-2 border-bottom">张配天(Peitian Zhang)
 </h2>
 
 <div class="container p-3 my-3 bg-primary text-white">
@@ -52,13 +52,13 @@ permalink: /homepage/
 
 <div class="row">
 
-    <div class="col-xs-12 col-md-2 col-sm-3">
+    <div class="col-md-auto">
 
-        <img title="Peitian Zhang&#39;s Photo" style="width: 150px" alt="Peitian Zhang&#39;s Photo"
+        <img title="Peitian Zhang&#39;s Photo" style="width: 400px" alt="Peitian Zhang&#39;s Photo"
             src="../assets/images/me.JPG">
     </div>
-    <div class="col-xs-12 col-md-8 col-sm-6">
-        <!-- <div>简历(CV)：<a href="pdfs/cv_zhengyima.pdf" class="download" target="_blank">(PDF)</a> </div> -->
+    <div class="col-6">
+        <div>简历(CV)：<a href="/assets/docs/resume.pdf" class="download" target="_blank">(PDF)</a> </div>
         <div>生日：2000-08-22</div>
 
         <div>&nbsp;</div>
@@ -74,11 +74,10 @@ permalink: /homepage/
         <div>QQ：<i class="fa fa-qq" aria-hidden="true"></i> 694931516</div>
         <div>bilibili：<a href="https://space.bilibili.com/393162910" target="_blank">叫我Pt666</a></div>
 
-        <p>&nbsp;</p>
     </div>
 </div>
-
-<h2>个人简介</h2>
+<br>
+<h2 class="pb-2 mt-4 mb-2 border-bottom">个人简介</h2>
 
     <div>
         <p class="ml-3">
@@ -87,20 +86,20 @@ permalink: /homepage/
     </div>
 
 
-    <h2>教育背景</h2>
+    <h2 class="pb-2 mt-4 mb-2 border-bottom">教育背景</h2>
     <ul>
         <li>
             2018至今  中国人民大学信息学院 计算机科学与技术
             <ul>
                 <li>
-                    GPA 3.55/4.00 排名前35%
+                    GPA 3.54/4.00 排名前35%
                 </li>
             </ul>
         </li>
     </ul>
 
 
-    <h2>学术论文</h2>
+    <h2 class="pb-2 mt-4 mb-2 border-bottom">学术论文</h2>
 
     <div>2021</div>
     <ul>
@@ -127,7 +126,7 @@ permalink: /homepage/
             <a href="../assets/docs/Retrieval Models.pdf" target="_blank"><strong>Neural Retrieval Models</strong></a>
         </li>
     </ul>
-    <h2>项目经历</h2>
+    <h2 class="pb-2 mt-4 mb-2 border-bottom">项目经历</h2>
     <ul>
         <li>
             <strong>新闻推荐的复现和研究</strong>, <a href="https://github.com/namespace-Pt/News-Recommendation">开源</a>
@@ -157,7 +156,7 @@ permalink: /homepage/
         </li>
     </ul>
 
-    <h2>所获奖项</h2>
+    <h2 class="pb-2 mt-4 mb-2 border-bottom">所获奖项</h2>
     <ul>
         <li>
             庆祝中华人民共和国成立70周年<strong>优秀先进个人</strong>
@@ -192,7 +191,7 @@ permalink: /homepage/
     </ul>
 
 
-    <h2>工作经验</h2>
+    <h2 class="pb-2 mt-4 mb-2 border-bottom">工作经验</h2>
     <ul>
         <li>
              微软亚洲研究院 <a href="https://scholar.google.com.hk/citations?user=k2SF4M0AAAAJ&hl=en">Zheng Liu</a>组实习生, 2021年7月31日-2022年1月31日
@@ -201,11 +200,11 @@ permalink: /homepage/
 
 
 
-    <!-- <h2>发明专利</h2>
+    <!-- <h2 class="pb-2 mt-4 mb-2 border-bottom">发明专利</h2>
     <ul>
 
     </ul>
-    <h2>软件著作权</h2>
+    <h2 class="pb-2 mt-4 mb-2 border-bottom">软件著作权</h2>
     <ul>
     </ul> -->
 
