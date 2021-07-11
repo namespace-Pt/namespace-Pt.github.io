@@ -1,17 +1,28 @@
-theme:
 title: Welcome to Pt!
-description: Personal Homepage and Posts
-icon: /assets/images/icon-rick.png
+tagline: Personal Homepage and Posts
+description: Peitian Zhang's homepage and posts
+
+author: Peitian Zhang
+social:
+  name: namespace-Pt
+  links:
+    - https://github.com/namespace-Pt
+    - https://stackoverflow.com/users/13491606/namespace-pt
+
+logo: /assets/images/icon-rick.png
 
 show_downloads: false
 google_analytics: G-W9EF2VS3C2
 
 plugins:
   - jemoji
+  - jekyll-seo-tag
 
 collections:
   drafts:
     output: true
+
+collections_dir: collections
 
 defaults:
   -
@@ -24,5 +35,3 @@ defaults:
       path: "collections/_drafts"
     values:
       layout: post
-
-collections_dir: collections

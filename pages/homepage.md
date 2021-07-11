@@ -17,8 +17,8 @@ permalink: /homepage/
     <meta name="keywords"
         content="Peitian Zhang; 张配天; zhangpeitian; zpt; namespace-pt; 中国人民大学信息学院">
     <meta property="og:title" name="og:title" content="Peitian Zhang">
-    <link rel="icon" href="{{ site.icon }}" type="image/x-icon" />
-    <link rel="shortcut icon" href="{{ site.icon }}" type="image/x-icon" />
+    <link rel="icon" href="{{ site.logo }}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ site.logo }}" type="image/x-icon" />
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,7 +32,7 @@ permalink: /homepage/
 <body>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 <!-- Brand -->
-<img class="navbar-brand" src="{{ site.icon }}" style="width: 25px">
+<img class="navbar-brand" src="{{ site.logo }}" style="width: 25px">
 
 <!-- Links -->
 <ul class="navbar-nav">
@@ -66,7 +66,6 @@ permalink: /homepage/
         <div>
             电子邮件： zpt@ruc.edu.cn
         </div>
-        <div>联系方式：</div>
         <div>Github：<i class="fa fa-github fa-1x" aria-hidden="true"></i> <a href="https://github.com/namespace-Pt"
                 target="_blank">namespace-Pt</a></div>
         <div>QQ：<i class="fa fa-qq" aria-hidden="true"></i> 694931516</div>
@@ -192,7 +191,7 @@ permalink: /homepage/
     <h2 class="pb-2 mt-4 mb-2 border-bottom">工作经验</h2>
     <ul>
         <li>
-             微软亚洲研究院 <a href="https://scholar.google.com.hk/citations?user=k2SF4M0AAAAJ&hl=en">Zheng Liu</a>组实习生, 2021年7月31日-2022年1月31日
+             微软亚洲研究院<a href="https://scholar.google.com.hk/citations?user=k2SF4M0AAAAJ&hl=en">Zheng Liu</a>组实习生, 2021年7月31日-2022年1月31日
         </li>
     </ul>
 
