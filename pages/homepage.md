@@ -52,9 +52,9 @@ permalink: /homepage/
 
 <div class="row">
 
-    <div class="col-md-auto">
+    <div class="col-5">
 
-        <img title="Peitian Zhang&#39;s Photo" style="width: 400px" alt="Peitian Zhang&#39;s Photo"
+        <img title="Peitian Zhang&#39;s Photo" class="img-fluid" alt="Peitian Zhang&#39;s Photo"
             src="../assets/images/me.JPG">
     </div>
     <div class="col-6">

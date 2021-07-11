@@ -1,12 +1,10 @@
-<header class="site-header" role="banner">
+{% if page.layout != 'home' %}
+  <header class="site-header" role="banner">
 
-  <div class="wrapper">
-    {% assign default_refs = site.pages | sort:"order" | map: "ref" %}
-    {% assign page_refs = site.header_page_refs | default: default_refs %}
-
-    {% if page.layout != 'home' %}
+    <div class="wrapper">
+      {% assign default_refs = site.pages | sort:"order" | map: "ref" %}
+      {% assign page_refs = site.header_page_refs | default: default_refs %}
       <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-    {% endif %}
 
     <!-- {% if page_refs %}
       <nav class="site-nav">
@@ -36,3 +34,4 @@
     {% endif %} -->
   </div>
 </header>
+{% endif %}
