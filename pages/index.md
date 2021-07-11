@@ -2,10 +2,9 @@
 layout: default
 permalink: /
 ---
-<div>
+<div class="container">
 
     <h2>Blogs</h2>
-
     <ul class="post-list">
       {% for post in site.posts %}
         <li>
