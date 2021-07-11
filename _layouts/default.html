@@ -74,13 +74,6 @@
             <a href="/homepage/" class="btn">My Homepage</a>
             <a href="{{ site.github.owner_url }}" class="btn">My GitHub</a>
 
-            <!-- {% if page.layout == 'home' and site.github.is_project_page %}
-            {% if site.show_downloads %}
-            <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-            <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-            {% endif %}
-            {% endif %} -->
-
             <!-- Post tagline -->
             {% if page.layout == 'post' %}
             <h2 class="project-date">
@@ -101,7 +94,7 @@
 
             {{ content }}
 
-            <footer class="site-footer">
+            <!-- <footer class="site-footer"> -->
                 <!-- Twitter icon -->
                 <!-- <span class="my-span-icon">
                     <a href="https://twitter.com/{{ site.twitter.username }}" aria-label="{{ site.github.owner_name }}'s Twitter" title="{{ site.github.owner_name }}'s Twitter">
@@ -118,7 +111,7 @@
                 </span>
                 {% endif %} -->
 
-            </footer>
+            <!-- </footer> -->
         </section>
 
         <script>
