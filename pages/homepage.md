@@ -61,8 +61,6 @@ permalink: /homepage/
         <!-- <div>简历(CV)：<a href="/assets/docs/resume.pdf" class="download" target="_blank">(PDF)</a> </div> -->
         <div>生日：2000-08-22</div>
 
-        <div>&nbsp;</div>
-
         <div>通信地址：北京市海淀区中关村大街59号中国人民大学</div>
         <div>邮政编码：100872</div>
         <div>
