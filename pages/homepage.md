@@ -58,7 +58,7 @@ permalink: /homepage/
             src="../assets/images/me.JPG">
     </div>
     <div class="col-6">
-        <div>简历(CV)：<a href="/assets/docs/resume.pdf" class="download" target="_blank">(PDF)</a> </div>
+        <!-- <div>简历(CV)：<a href="/assets/docs/resume.pdf" class="download" target="_blank">(PDF)</a> </div> -->
         <div>生日：2000-08-22</div>
 
         <div>&nbsp;</div>
