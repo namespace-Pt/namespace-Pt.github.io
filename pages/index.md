@@ -1,4 +1,39 @@
 ---
-layout: home
+layout: default
 permalink: /
 ---
+<div>
+
+    <h2>Blogs</h2>
+
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li>
+          {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+          <h2>
+            <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
+
+    <hr>
+
+    <h2>Drafts</h2>
+
+    <ul class="post-list">
+      {% for post in site.drafts %}
+        <li>
+          {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
+          <!-- {% assign tag = post.tag | prepend: "'s " | default: "" %} -->
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <h2>
+            <a class="post-link" href="{{ post.url | relative_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
+          </h2>
+        </li>
+      {% endfor %}
+    </ul>
+
+  </div>

@@ -1,5 +1,3 @@
----
----
 Many teachers suck bucause they donot know how to teach students. They just make slices hard to understand, and read these ppts on class.
 I don't know the essential reason for their incapability for teaching and expressing, until recently when I began my own research, I found
 that the most important thing which should be presented in the teaching process is the LOGIC.
