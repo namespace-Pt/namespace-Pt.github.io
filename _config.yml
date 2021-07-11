@@ -3,8 +3,6 @@ title: Welcome to Pt!
 description: Personal Homepage and Posts
 icon: /assets/images/icon-rick.png
 
-# baseurl: https://
-
 show_downloads: false
 google_analytics: G-W9EF2VS3C2
 
@@ -26,16 +24,5 @@ defaults:
       path: "collections/_drafts"
     values:
       layout: post
-  # -
-  #   scope:
-  #     path: "collections/_moods"
-  #   values:
-  #     layout: post
-  #     title: 日记
-  # -
-  #   scope:
-  #     path: "collections/_mems"
-  #   values:
-  #     layout: post
 
 collections_dir: collections
