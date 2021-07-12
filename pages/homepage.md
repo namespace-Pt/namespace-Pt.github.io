@@ -9,7 +9,6 @@ permalink: /homepage/
     <title>
         张配天(Peitian Zhang)的个人主页
     </title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
         content="Peitian Zhang's homepage">
