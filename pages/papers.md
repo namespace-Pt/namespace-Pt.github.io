@@ -1,6 +1,7 @@
 ---
+layout: default
 title: Several Neural Retrieval/Ranking Papers
-permalink: /papers
+permalink: /papers/
 ---
 - [COIL](../assets/docs/papers/1.pdf)
 - [ColBERT](../assets/docs/papers/2.pdf)
