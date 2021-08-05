@@ -1,0 +1,11 @@
+---
+title: Several Neural Retrieval/Ranking Papers
+---
+- [COIL](../assets/docs/papers/1.pdf)
+- [ColBERT](../assets/docs/papers/2.pdf)
+- [Document level DeepCT](../assets/docs/papers/3.pdf)
+- [DC-Bert](../assets/docs/papers/4.pdf)
+- [Psudo-Document](../assets/docs/papers/5.pdf)
+- [Latent Terms](../assets/docs/papers/6.pdf)
+- [DeepImpact](../assets/docs/papers/7.pdf)
+- [SparTerm](../assets/docs/papers/8.pdf)
