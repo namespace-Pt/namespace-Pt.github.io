@@ -13,4 +13,4 @@ permalink: /papers/
 - [SparTerm](../assets/docs/papers/8.pdf)
 
 ### My Talk
-[pdf](../assets/Retrieval Models.pdf)
+[pdf](../assets/docs/Retrieval Models.pdf)
