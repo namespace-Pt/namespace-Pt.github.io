@@ -11,3 +11,6 @@ permalink: /papers/
 - [Latent Terms](../assets/docs/papers/6.pdf)
 - [DeepImpact](../assets/docs/papers/7.pdf)
 - [SparTerm](../assets/docs/papers/8.pdf)
+
+### My Talk
+[pdf](../assets/Retrieval Models.pdf)
