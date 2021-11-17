@@ -2,9 +2,8 @@
 title: "Learning to Select Historical News Articles for Interaction Based News Recommendation"
 collection: publications
 permalink: /publication/1
-excerpt: 'This paper propose a novel framework that significantly speeds up online recommendation.'
-date: 2009-10-01
+abstract: 'The key to personalized news recommendation is to match the user’s interests with the candidate news precisely and efficiently. Most existing approaches embed user interests into a representation vector then recommend by comparing it with the candidate news vector. In such a workflow, fine-grained matching signals may be lost. Recent studies try to cover that by modeling fine-grained interactions between the candidate news and each browsed news article of the user. Despite the effectiveness improvement, these models suffer from much higher computation costs online. Consequently, it remains a tough issue to take advantage of effective interactions in an efficient way. To address this problem, we proposed an end-to-end Selective Fine-grained Interaction framework (SFI) with a learning-to-select mechanism. Instead of feeding all historical news into interaction, SFI can quickly select informative historical news w.r.t. the candidate and exclude others from following computations. We empower the selection to be both sparse and automatic, which guarantees efficiency and effectiveness respectively. Extensive experiments on the publicly available dataset MIND validates the superiority of SFI over the state-of-the-art methods: with only five historical news selected, it can significantly improve the AUC by 2.17% over the state-of-the-art interaction-based models; at the same time, it is four times faster.'
+date: 2021-8-22
 venue: 'Arxiv'
+link: "https://arxiv.org/pdf/2110.06459.pdf"
 ---
-
-[Download paper here](https://arxiv.org/pdf/2110.06459.pdf)
