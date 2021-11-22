@@ -1,6 +1,5 @@
 ---
 layout: archive
-title: "CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -26,6 +25,3 @@ Publications
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
-Service and leadership
-======
-*
